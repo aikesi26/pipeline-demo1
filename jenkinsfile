@@ -1,11 +1,16 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      steps {
-        echo 'hello world'
-		echo '---- end ---'
-      }
+    agent any
+
+    tools {
+        maven 'mvn-3.6.0'
     }
-  }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh "mvn clean package spring-boot:repackage"
+                sh "printenv" // 将环境变量打印到 console 中
+            }
+        }
+    }
 }
