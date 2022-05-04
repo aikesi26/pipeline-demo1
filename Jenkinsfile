@@ -16,7 +16,9 @@ pipeline {
 
     post {
         always {
-            pmd(canRunOnFailed: true, pattern: '**/target/pmd.xml')
+            script {
+                pmd(canRunOnFailed: true, pattern: '**/target/pmd.xml')
+            }
         }
     }
 }
