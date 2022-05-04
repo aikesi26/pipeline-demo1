@@ -16,14 +16,7 @@ pipeline {
 
     post {
         always {
-            script {
-                try {
-                    pmd(canRunOnFailed: true, pattern: '**/target/pmd.xml')
-                } catch(err) {
-                    echo "has error"
-                }
-
-            }
+            echo "--- ok ---"
         }
     }
 }
