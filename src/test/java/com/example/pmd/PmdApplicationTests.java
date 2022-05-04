@@ -8,6 +8,7 @@ class PmdApplicationTests {
 
     @Test
     void contextLoads() {
+        System.err.println("----------- contextLoads -----------");
     }
 
 }

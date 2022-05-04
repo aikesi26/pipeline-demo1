@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.8</version>
+                <version>3.13.0</version>
                 <configuration>
                     <rulesets>
                         <rulesets>rulesets/java/ali-comment.xml</rulesets>
