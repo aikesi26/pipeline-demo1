@@ -15,7 +15,7 @@
     <description>pmd</description>
     <properties>
         <java.version>11</java.version>
-        <pmdVersion>6.45.0</pmdVersion>
+        <pmdVersion>6.42.0</pmdVersion>
     </properties>
     <dependencies>
         <dependency>
