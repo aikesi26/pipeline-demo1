@@ -15,6 +15,7 @@
     <description>pmd</description>
     <properties>
         <java.version>11</java.version>
+        <pmdVersion>6.21.0</pmdVersion>
     </properties>
     <dependencies>
         <dependency>
@@ -38,7 +39,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.13.0</version>
+                <version>3.16.0</version>
                 <configuration>
                     <rulesets>
                         <rulesets>rulesets/java/ali-comment.xml</rulesets>
@@ -62,6 +63,27 @@
                     </execution>
                 </executions>
                 <dependencies>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-core</artifactId>
+                        <version>${pmdVersion}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-java</artifactId>
+                        <version>${pmdVersion}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-javascript</artifactId>
+                        <version>${pmdVersion}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>net.sourceforge.pmd</groupId>
+                        <artifactId>pmd-jsp</artifactId>
+                        <version>${pmdVersion}</version>
+                    </dependency>
+
                     <!-- https://mvnrepository.com/artifact/com.alibaba.p3c/p3c-pmd -->
                     <dependency>
                         <groupId>com.alibaba.p3c</groupId>
