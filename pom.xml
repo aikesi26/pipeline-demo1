@@ -14,7 +14,6 @@
     <name>pmd</name>
     <description>pmd</description>
     <properties>
-        <java.version>11</java.version>
         <pmdVersion>6.42.0</pmdVersion>
     </properties>
     <dependencies>
@@ -41,19 +40,9 @@
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.16.0</version>
                 <configuration>
-                    <rulesets>
-                        <ruleset>rulesets/java/ali-comment.xml</ruleset>
-                        <ruleset>rulesets/java/ali-concurrent.xml</ruleset>
-                        <ruleset>rulesets/java/ali-constant.xml</ruleset>
-                        <ruleset>rulesets/java/ali-exception.xml</ruleset>
-                        <ruleset>rulesets/java/ali-flowcontrol.xml</ruleset>
-                        <ruleset>rulesets/java/ali-naming.xml</ruleset>
-                        <ruleset>rulesets/java/ali-oop.xml</ruleset>
-                        <ruleset>rulesets/java/ali-orm.xml</ruleset>
-                        <ruleset>rulesets/java/ali-other.xml</ruleset>
-                        <ruleset>rulesets/java/ali-set.xml</ruleset>
-                    </rulesets>
                     <printFailingErrors>true</printFailingErrors>
+                    <failOnViolation>true</failOnViolation>
+                    <failurePriority>5</failurePriority>
                 </configuration>
                 <executions>
                     <execution>
