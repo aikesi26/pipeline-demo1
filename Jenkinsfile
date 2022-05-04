@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('pmd') {
             steps {
-                sh "mvn clean -U"
-                sh "mvn dependency:purge-local-repository"
+                sh "mvn clean install"
                 sh "mvn pmd:pmd"
             }
         }
