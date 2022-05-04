@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('pmd') {
             steps {
+                sh "mvn clean install"
                 sh "mvn pmd:pmd"
             }
         }
