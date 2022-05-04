@@ -19,7 +19,7 @@ pipeline {
             script {
                 try {
                     pmd(canRunOnFailed: true, pattern: '**/target/pmd.xml')
-                } catch {
+                } catch(err) {
                     echo "has error"
                 }
 
